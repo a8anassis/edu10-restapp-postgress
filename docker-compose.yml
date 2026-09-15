@@ -1,13 +1,13 @@
 services:
   db:
     image: postgres:18-alpine
-    container_name: postgres_db
+    container_name: postgres_db10
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - postgres_data:/var/lib/postgresql
+      - postgres_data10:/var/lib/postgresql
     ports:
       - "5433:5432"
     healthcheck:
@@ -18,4 +18,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  postgres_data:
+  postgres_data10:
