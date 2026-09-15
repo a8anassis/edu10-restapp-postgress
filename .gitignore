@@ -37,6 +37,6 @@ out/
 .vscode/
 
 ### Environment / secrets ###
-.env
+#.env
 uploads/
 logs/
