@@ -32,7 +32,7 @@ public abstract class AbstractEntity {
     @Column(nullable = false)
     private boolean deleted;
 
-    @Column(name = "deleted_at", columnDefinition = "DATETIME")
+    @Column(name = "deleted_at", columnDefinition = "TIMESTAMPTZ")
     private Instant deletedAt;
 
     public void softDelete() {
